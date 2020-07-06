@@ -1,0 +1,22 @@
+##grflangid 0x07
+##plural 6
+##gender m f n p
+##case abl acc dat f gen m n nom p pre
+
+# GRF name and description definitions
+STR_GRF_NAME        :xUSSR Фикс на цены для сервера PepelatziGravetzappa
+STR_GRF_DESCRIPTION :xUSSR Фикс на цены для сервера PepelatziGravetzappa. Поменяли цены и цвета рельсов и даты появления начальных паровозов.
+STR_GRF_URL                                                                     :https://www.youtube.com/channel/UClHDms-XsD-0StOm6kRqtpA/about
+
+STR_ERA2_MENU                                                                   :{ORANGE}1520 {LTBLUE}Магистральная ж/д переменного тока
+STR_ERA3_MENU                                                                   :{ORANGE}1520 {LTBLUE}Скоростная ж/д переменного тока
+STR_ERA4_MENU                                                                   :{ORANGE}1520 {LTBLUE}Высокоскоростная ж/д переменного тока
+STR_ERAC_MENU                                                                   :{ORANGE}1520 {LTBLUE}Ж/д переменного тока
+STR_ERD2_MENU                                                                   :{ORANGE}1520 {RED}Магистральная ж/д постоянного тока
+STR_ERD3_MENU                                                                   :{ORANGE}1520 {RED}Скоростная ж/д постоянного тока
+STR_ERDC_MENU                                                                   :{ORANGE}1520 {RED}Ж/д постоянного тока
+STR_ERDS_MENU                                                                   :{ORANGE}1520 {PURPLE}Двухсистемная ж/д
+STR_RLA0_MENU                                                                   :{ORANGE}1520 Ж/д Путь на деревянных шпалах
+STR_RLA1_MENU                                                                   :{ORANGE}1520 Автономная ж/д
+STR_RLA2_MENU                                                                   :{ORANGE}1520 Магистральная автономная ж/д
+STR_RLA3_MENU                                                                   :{ORANGE}1520 Скоростная автономная ж/д

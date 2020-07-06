@@ -1,0 +1,197 @@
+grf {
+	grfid: "MA\00\02";
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESCRIPTION);
+	url: string(STR_GRF_URL);
+	version: 1;
+	min_compatible_version: 0;
+}
+ /// railtracks
+/// Пути эпохи индустриализации, пути промпредприятий
+// Автономная железная дорога
+
+item (FEAT_RAILTYPES, rla0) {
+  property {
+    label: "RLA0";
+    introduction_date: date(1843, 1, 1);    
+    menu_text: string(STR_RLA0_MENU);   
+    construction_cost: 11;//49
+    maintenance_cost: 2;	
+  }
+}
+
+// Автономная железная дорога
+item (FEAT_RAILTYPES, rla1) {
+  property {
+    label: "RLA1";
+    introduction_date: date(1880, 1, 1);
+    menu_text: string(STR_RLA1_MENU);    
+	construction_cost: 15;//64
+    maintenance_cost: 2;
+  }  
+}
+
+// электрифицированная железная дорога переменного тока
+// electrified railway AC (alternate current)
+item (FEAT_RAILTYPES, era1) {
+  property {
+    label: "ERA1";
+    introduction_date: date(1952, 1, 1);
+    menu_text: string(STR_ERAC_MENU);
+	construction_cost: 18;//115
+    maintenance_cost: 4;
+  }
+}
+
+// электрифицированная железная дорога постоянного тока
+// electrified railway DC (direct current)
+item (FEAT_RAILTYPES, erd1) {
+  property {
+    label: "ERD1";
+    introduction_date: date(1930, 1, 1);    
+    menu_text: string(STR_ERDC_MENU);    
+	construction_cost: 20; //128
+    maintenance_cost: 5;
+  }
+}
+
+/// Магистральная линия (в XLS с 1920)
+// Автономная железная дорога
+item (FEAT_RAILTYPES, rla2) {
+  property {
+    label: "RLA2";
+    introduction_date: date(1920, 1, 1);        
+    menu_text: string(STR_RLA2_MENU);
+	construction_cost: 25;//128
+    maintenance_cost: 4;
+  }
+}
+
+// электрифицированная железная дорога переменного тока
+item (FEAT_RAILTYPES, era2) {
+  property {
+    label: "ERA2";
+    introduction_date: date(1952, 1, 1);    
+    menu_text: string(STR_ERA2_MENU);  
+	construction_cost: 33;//230
+    maintenance_cost: 7;	
+  }
+}
+
+// электрифицированная железная дорога постоянного тока
+item (FEAT_RAILTYPES, erd2) {
+  property {
+    label: "ERD2";
+    introduction_date: date(1930, 1, 1);    
+    menu_text: string(STR_ERD2_MENU);   
+    construction_cost: 37;
+    maintenance_cost: 8;	
+  }
+}
+
+// Двусистемная ж/д (double-system)
+item (FEAT_RAILTYPES, er2s) {
+  property {
+    label: "ER2S";
+    introduction_date: date(1963, 1, 1);    
+    menu_text: string(STR_ERDS_MENU);
+	construction_cost: 47;
+    maintenance_cost: 10;
+  }
+}
+
+/// Высокоскоростная пассажирская магистраль (в XLS с 1960)
+// Автономная железная дорога
+item (FEAT_RAILTYPES, rla3) {
+  property {
+    label: "RLA3";
+    introduction_date: date(1930, 1, 1);    
+    menu_text: string(STR_RLA3_MENU);
+	construction_cost: 56;
+    maintenance_cost: 8;
+  }
+}
+
+// электрифицированная железная дорога переменного тока
+item (FEAT_RAILTYPES, era3) {
+  property {
+    label: "ERA3";
+    introduction_date: date(1958, 1, 1);  
+    menu_text: string(STR_ERA3_MENU);
+	construction_cost: 70;//461
+    maintenance_cost: 14;
+  }
+}
+
+// электрифицированная железная дорога постоянного тока
+item (FEAT_RAILTYPES, erd3) {
+  property {
+    label: "ERD3";
+    introduction_date: date(1956, 1, 1);        
+    menu_text: string(STR_ERD3_MENU);
+	construction_cost: 74; //512
+    maintenance_cost: 16;
+  }
+}
+
+// электрифицированная железная дорога переменного тока
+item (FEAT_RAILTYPES, era4) {
+  property {
+    label: "ERA4";
+    introduction_date: date(2008, 1, 1);
+    menu_text: string(STR_ERA4_MENU);
+	construction_cost: 88;
+    maintenance_cost: 19;
+  }
+}
+
+engine_override("AKA\08");
+
+item (FEAT_TRAINS, d_schneider, 580) { //    vehicle_dates(1867, 1877, 40, 10, 3, 2)
+  property {
+	introduction_date: date(1843, 1, 1); 
+	model_life: 34;
+	retire_early: 0;
+	//reliability_decay:20;
+  }
+}
+
+item (FEAT_TRAINS, f_f, 581) { //    vehicle_dates(1871, 1884, 60, 10, 7, 6)
+  property {
+	introduction_date: date(1847, 1, 1); 
+	model_life: 37;
+	retire_early: 0;
+  }
+}
+
+item (FEAT_TRAINS, t_t, 513) { // vehicle_dates(1875, 1896, 40, 10, 4, 2)
+property {
+	introduction_date: date(1851, 1, 1); 
+	model_life: 45;
+	retire_early: 0;
+  }
+}
+
+item (FEAT_TRAINS, chn, 503) {  //vehicle_dates(1879, 1902, 40, 10, 5, 5)
+   property {
+	introduction_date: date(1855, 1, 1); 
+	model_life: 47;
+	retire_early: 0;
+  }
+}
+
+item (FEAT_TRAINS, boxcar_type1846, 519) { //vehicle_dates(1846, 1875, 20, 10, 4, 3)
+  property {
+    introduction_date: date(1843, 1, 1); 
+	model_life: 32;
+	retire_early: 0;
+  }
+}
+
+item (FEAT_TRAINS, flatbed_type1846, 533) { //vehicle_dates(1846, 1878, 30, 10, 4, 5)
+  property {
+    introduction_date: date(1843, 1, 1); 
+	model_life: 35;
+	retire_early: 0;
+  }
+}

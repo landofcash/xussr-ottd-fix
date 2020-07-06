@@ -1,0 +1,20 @@
+##grflangid 0x01
+##plural 0
+
+# GRF name and description definitions
+STR_GRF_NAME        :xUSSR Price Fix for PepelatziGravetzappa server
+STR_GRF_DESCRIPTION :xUSSR Price Fix for PepelatziGravetzappa server. We did some misc price and naming changes also changed early loco start dates.
+STR_GRF_URL                                                                     :https://www.youtube.com/channel/UClHDms-XsD-0StOm6kRqtpA/about
+
+STR_ERA2_MENU                                                                   :{ORANGE}1520 {LTBLUE}Trunk Electrified AC railroad
+STR_ERA3_MENU                                                                   :{ORANGE}1520 {LTBLUE}High-speed Electrified AC railroad
+STR_ERA4_MENU                                                                   :{ORANGE}1520 {LTBLUE}Unlimited-speed Electrified AC railroad
+STR_ERAC_MENU                                                                   :{ORANGE}1520 {LTBLUE}Electrified AC railroad
+STR_ERD2_MENU                                                                   :{ORANGE}1520 {RED}Trunk Electrified DC railroad
+STR_ERD3_MENU                                                                   :{ORANGE}1520 {RED}High-speed Electrified DC railroad
+STR_ERDC_MENU                                                                   :{ORANGE}1520 {RED}Electrified DC railroad
+STR_ERDS_MENU                                                                   :{ORANGE}1520 {PURPLE}Electrified double-system railroad
+STR_RLA0_MENU                                                                   :{ORANGE}1520 Rails (Wooden Sleepers)
+STR_RLA1_MENU                                                                   :{ORANGE}1520 Railroad
+STR_RLA2_MENU                                                                   :{ORANGE}1520 Trunk Railroad
+STR_RLA3_MENU                                                                   :{ORANGE}1520 High-speed Railroad
